@@ -1,9 +1,11 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DataDiagram/Example/Sample.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
     <Files>
+      <File FileName="Assets/DataDiagram/Example/Sample.cs" Line="1" Column="1" />
       <File FileName="Assets/DataDiagram/Script/DD_DataDiagram.cs" Line="26" Column="6" />
-      <File FileName="Assets/DataDiagram/Example/Sample.cs" Line="64" Column="3" />
+      <File FileName="Assets/Scripts/LogSave.cs" Line="10" Column="15" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="26" Column="77" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
