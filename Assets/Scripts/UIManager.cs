@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour {
 
 	[SerializeField] private Text txtZ;
 
+	[SerializeField] private LogSave log;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -21,5 +23,6 @@ public class UIManager : MonoBehaviour {
 		this.txtX.text = Input.acceleration.x.ToString();	
 		this.txtY.text = Input.acceleration.y.ToString();	
 		this.txtZ.text = Input.acceleration.z.ToString();	
+		log.logSave(this.txtX.text + "," + this.txtY.text + "," + this.txtZ.text);
 	}
 }
