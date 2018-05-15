@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour {
 
 	private int updateCount = 0;
 
-	[SerializeField] private Text txtAll;
+	[SerializeField] private InputField txtAll;
 
 
 	// Use this for initialization

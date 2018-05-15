@@ -1,8 +1,8 @@
-Android
+iOS
 PlayerPath?
-/Users/tnagayama/workspace/rikuty/rikuty_001/rikuty_001.apk
+/Users/tnagayama/workspace/rikuty/test
 SceneListBegin?
-Assets/race-track-lake/race_track_lake.unity
+Assets/Scenes/test.unity
 SceneListEnd?
 efc6b5e3c5cc8c20654d54969de7a1f2 Assembly-CSharp-firstpass.dll:.DragAlongPath
 0a4d203a4d1c62a253bf363dd42910c0 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.RotationKeyframeList
@@ -154,6 +154,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DD_ZoomButton
 d37e3e9c19659d427f83347101e81481 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.MoveAlongPathPhysics
 3acaee29beb68debe559c5d436317fda Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenAnchorMax
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LogSave
 a0572c3a849d04638f2289fa2e7805d5 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.CardinalPath
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:WhiteCat.ScriptableComponent
 7efed57be892091afeed1c6de659f0ef Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenCameraBackgroundColor
@@ -161,7 +162,7 @@ a0572c3a849d04638f2289fa2e7805d5 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.Ca
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:WhiteCatEditor.BaseEditor
 7efed57be892091afeed1c6de659f0ef Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenAmbientSkyColor
 0003742a1cd134e0b9b420e7620b7697 Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenScale
-15334f3a637a0ae4cd9e28f5f44bbe5f Assembly-CSharp.dll:.UIManager
+9d26946f51956f57f305d0f102bf62f5 Assembly-CSharp.dll:.UIManager
 9d9fbf93a1ef990abac70c1d6a884c6f Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenMaterialTextureOffset
 abd89dbb317cf0c1be5238747939ec0a Assembly-CSharp-firstpass.dll:WhiteCat.Paths.MoveSpeedKeyframeList
 7b8e7866f51a0817662577a68d076786 Assembly-CSharp.dll:.DD_Lines
