@@ -13,6 +13,13 @@ public class UIManager : MonoBehaviour {
 
 	[SerializeField] private LogSave log;
 
+	private string txtLog;
+
+	private int updateCount = 0;
+
+	[SerializeField] private Text txtAll;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -23,6 +30,11 @@ public class UIManager : MonoBehaviour {
 		this.txtX.text = Input.acceleration.x.ToString();	
 		this.txtY.text = Input.acceleration.y.ToString();	
 		this.txtZ.text = Input.acceleration.z.ToString();	
-		log.logSave(this.txtX.text + "," + this.txtY.text + "," + this.txtZ.text);
+		txtLog += this.txtX.text + "," + this.txtY.text + "," + this.txtZ.text + "\n";
+		this.updateCount++;
+		if(this.updateCount == 300){
+			this.txtAll.text = txtLog;
+		}
+
 	}
 }
