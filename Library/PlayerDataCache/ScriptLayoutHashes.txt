@@ -1,8 +1,8 @@
-iOS
+Android
 PlayerPath?
-/Users/tnagayama/workspace/rikuty/test
+/Users/tnagayama/workspace/rikuty/rikuty_001/rikuty_001.apk
 SceneListBegin?
-Assets/Scenes/test.unity
+Assets/race-track-lake/race_track_lake.unity
 SceneListEnd?
 efc6b5e3c5cc8c20654d54969de7a1f2 Assembly-CSharp-firstpass.dll:.DragAlongPath
 0a4d203a4d1c62a253bf363dd42910c0 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.RotationKeyframeList
