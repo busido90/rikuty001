@@ -33,7 +33,7 @@ ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:3:135-160
 application
 ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:4:3-17:17
-MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:4:3-6:17
+MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:4:3-6:17
 	android:label
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:4:92-124
 	android:icon
@@ -104,7 +104,7 @@ ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:16:16-49
 uses-sdk
 ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:18:3-72
-MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:3:3-45
+MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:3:3-45
 	android:targetSdkVersion
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:18:40-69
 		INJECTED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml
@@ -118,7 +118,7 @@ ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:19:17-49
 uses-permission#android.permission.INTERNET
 ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:20:3-65
-MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:7:3-65
+MERGED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:7:3-65
 	android:name
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:20:20-62
 uses-feature#android.hardware.sensor.accelerometer
@@ -146,12 +146,12 @@ ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/
 	android:name
 		ADDED from /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/src/main/AndroidManifest.xml:24:17-80
 meta-data#com.samsung.android.vr.application.mode
-ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:5:5-96
+ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:5:5-96
 	android:value
-		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:5:71-94
+		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:5:71-94
 	android:name
-		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:5:16-70
+		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:5:16-70
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:8:3-66
+ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:8:3-66
 	android:name
-		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/AndroidManifest.xml:8:20-63
+		ADDED from [:OVRPlugin:] /Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/AndroidManifest.xml:8:20-63

@@ -91,7 +91,7 @@ public class Force : MonoBehaviour
 	private List<BoolMonitor> monitors;
 	private StringBuilder data;
 
-	public MoveAlongPathWithSpeed alongPath;
+	public Rigidbody rigidBody;
 
 	void Start()
 	{
@@ -183,22 +183,21 @@ public class Force : MonoBehaviour
 		this.MakeAverage(rot);
 
 		if(this.CheckCycle(rot) && this.waitCount > 0.5f){
-			this.alongPath.speed += 3f;
+			this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z + 3f);
 			this.waitCount = 0f;
 		}
 
 		this.waitCount += Time.deltaTime;
 
 		if(this.waitCount > 0.5f){
-			this.alongPath.speed -= 0.3f;
-
+			this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z - 0.3f);
 		}
 
-		if(this.alongPath.speed < 0f){
-			this.alongPath.speed = 0f;
+		if(this.rigidBody.velocity.z < 0f){
+			this.rigidBody.velocity = Vector3.zero;
 		}
-		if(this.alongPath.speed > 30f){
-			this.alongPath.speed = 30f;
+		if(this.rigidBody.velocity.z > 30f){
+			this.rigidBody.velocity = Vector3.forward * 30f;
 		}
 
 
@@ -261,7 +260,7 @@ public class Force : MonoBehaviour
 		result |= rot.x < this.average.x - KOTEI || this.average.x + KOTEI < rot.x;
 		result |= rot.y < this.average.y - KOTEI || this.average.y + KOTEI < rot.y;
 		result |= rot.z < this.average.z - KOTEI || this.average.z + KOTEI < rot.z;
-		result |= rot.w < this.average.w - KOTEI || this.average.w + KOTEI < rot.w;
+//		result |= rot.w < this.average.w - KOTEI || this.average.w + KOTEI < rot.w;
 		return result;
 	}
 }

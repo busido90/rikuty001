@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/tnagayama/.android/build-cache/ad8a06d147cf465a2468058cd4753bdd1f3ab711/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee480f74e93a3d7f1cb226e86a6ef435e7fbb05f">
-        <dex dex="/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_79843a2f7ec52df37f541b8eeeb80d62293ec9b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/libs/unity-classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="a81d8eeaeba8596486304110d572e34e9093433b">
         <dex dex="/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_ff1329ba224cb0329b00b3ae7a7c9203b376790f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/tnagayama/.android/build-cache/8b5d2d168e5e12f5ce629d70c26a0f8113a75890/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee480f74e93a3d7f1cb226e86a6ef435e7fbb05f">
+        <dex dex="/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_fc794289b109df09065a858ec282b83682abbf66.jar" />
     </item>
 
 </items>

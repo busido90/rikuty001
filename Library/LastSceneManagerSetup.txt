@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/scene_track_2.unity
+- path: Assets/NatureManufacture Assets/Advanced Foliage Pack/Demo/Overview Scene.unity
   isLoaded: 1
   isActive: 1
