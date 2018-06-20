@@ -40,6 +40,7 @@ public class Force : MonoBehaviour
 		private float m_displayTimeout = 0.0f;
 		private float m_displayTimer = 0.0f;
 
+
 		public BoolMonitor(string name, BoolGenerator generator, float displayTimeout = 0.5f)
 		{
 			m_name = name;
@@ -92,6 +93,9 @@ public class Force : MonoBehaviour
 	private StringBuilder data;
 
 	public Rigidbody rigidBody;
+
+	public bool isStart = false;
+
 
 	void Start()
 	{
@@ -152,6 +156,8 @@ public class Force : MonoBehaviour
 
 	void Update()
 	{
+		if(!this.isStart) return;
+
 		OVRInput.Controller activeController = OVRInput.GetActiveController();
 
 		data.Length = 0;

@@ -2,7 +2,6 @@ Android
 PlayerPath?
 /Users/tnagayama/workspace/rikuty/rikuty_001/rikuty_001.apk
 SceneListBegin?
-Assets/Oculus/VR/Scenes/UI.unity
 Assets/Scenes/scene_title.unity
 Assets/Scenes/scene_track_3.unity
 SceneListEnd?
@@ -40,7 +39,7 @@ ec8b9a52568deb75d44b9130da88c1bc Assembly-CSharp-firstpass.dll:WhiteCat.Tween.Tw
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.SampleInfo
 4cde3898e72c4ca38e677aeefc5e4354 Assembly-CSharp-firstpass.dll:WhiteCat.FSM.StackState
 5979728add95abdc642051d92f726e95 Assembly-CSharp.dll:.OVRDebugHeadController
-78396a5a67e03649ec5f58522f8f0398 Assembly-CSharp.dll:.Force
+9a0df9069128949f62522aad9e664519 Assembly-CSharp.dll:.Force
 23b50ef73e2c1a8a76860d35bcbbf8fc Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.GlobalFog
 daabd8d8800a87cff11f866c4d06a232 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ContrastStretch
 7efed57be892091afeed1c6de659f0ef Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenFogColor
@@ -328,3 +327,65 @@ abd89dbb317cf0c1be5238747939ec0a Assembly-CSharp-firstpass.dll:WhiteCat.Paths.Fi
 7b8e7866f51a0817662577a68d076786 Assembly-CSharp-firstpass.dll:.DD_CoordinateAxis
 97b3e1b4352e2713eafc60af33250232 Assembly-CSharp-firstpass.dll:Gamestrap.MainMenuControl
 4d41d6a90d8754adcebf37bf8efcbd8e Assembly-CSharp-firstpass.dll:Gamestrap.GradientEffect
+9aa9e298313863391d9716ab1d949fa0 Assembly-CSharp.dll:.OvrAvatar
+2e9d03ba5ebf86f79e28271ebbce8cc5 Assembly-CSharp.dll:.OVRLipSyncMicInput
+c742b6dfdf7b97a4565ba900d4550c3d Assembly-CSharp.dll:.OVRDebugConsole
+44e7dd2c847d20ccc76316d5843da831 Assembly-CSharp.dll:.OVRLipSyncTestAudio
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarSettingsEditor
+794fafc549057a72705d2401616e50a9 Assembly-CSharp.dll:.RemoteLoopbackManager
+2e9d03ba5ebf86f79e28271ebbce8cc5 Assembly-CSharp.dll:.OVRMicInput
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarSDKManager
+0e15f419041fbc1d482bd1c8071d7adf Assembly-CSharp.dll:.OVRLipSyncSequence
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ONSPVersion
+13a6a1a75679b3c0344b1b6c7e825e34 Assembly-CSharp.dll:.OvrAvatarComponent
+069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderComponent
+e0b390a9dc91fba20ed23c13c2e96190 Assembly-CSharp.dll:.EnableSwitch
+17fe611912d5cd6686d4060ca87f95b2 Assembly-CSharp.dll:.OculusSpatializerUnity
+069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarSkinnedMeshRenderPBSComponent
+069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarRenderComponent
+8034566cc95d936e93f4b77ff843d1ce Assembly-CSharp.dll:.PoseEditHelper
+477e57972c7cb9ddea417152523c8518 Assembly-CSharp.dll:.AudioManager
+e7de64a2f47c8a0046023c2b0a8f83bb Assembly-CSharp.dll:.OvrAvatarSettings
+5601a5517df0b1688b4d3e4cbd44d6d7 Assembly-CSharp.dll:Oculus.Platform.PlatformSettings
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarTouchController
+bccbd336fb414aac9546b8262134f25a Assembly-CSharp.dll:.PlatformManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRLipSync
+85945c52833a42f4c8ccdc8b47380cb2 Assembly-CSharp.dll:Oculus.Platform.CallbackRunner
+558ebdd5c791d30ce7c6bd84adf7245b Assembly-CSharp.dll:.PlayerController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBase
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Oculus.Platform.StandalonePlatformSettings
+5e1701ec82b76ba237999557f0b0e744 Assembly-CSharp.dll:.OvrAvatarLocalDriver
+653d2915bfd1eae65a00b191cdaad2d6 Assembly-CSharp.dll:.OVRLipSyncContextMorphTarget
+6de6070780d7efa822923e689e617f4c Assembly-CSharp.dll:.OvrAvatarMeshInstance
+58ea3d098767841a0513b059573cfc16 Assembly-CSharp.dll:.ONSPAmbisonicsNative
+01a983730f96c20cc91823391ed40c4e Assembly-CSharp.dll:.OVRLipSyncContextTextureFlip
+efaacbc067f54d801b8ecfdac3af7084 Assembly-CSharp.dll:.OVRVoiceModContext
+28702e9cfa17ebb1a03614df6a1590ff Assembly-CSharp.dll:.ONSPProfiler
+c0c07fd3ae2440e647d00d1c1b33b5cc Assembly-CSharp.dll:.OVRLipSyncContextBase
+cbde9307bd71d0e0920468500cb8d863 Assembly-CSharp.dll:.AmbienceEmitter
+5e1701ec82b76ba237999557f0b0e744 Assembly-CSharp.dll:.OvrAvatarRemoteDriver
+fbd6825d2c5aa76b452d9354f2b8bad1 Assembly-CSharp.dll:.VoiceModDemo_Logic
+c742b6dfdf7b97a4565ba900d4550c3d Assembly-CSharp.dll:.OVRLipSyncDebugConsole
+3265561905748d612a82e269d089ae02 Assembly-CSharp.dll:.LipSyncDemo_SetCurrentTarget
+4b21a475fcdbf93662b1f31c2977c8f8 Assembly-CSharp.dll:Oculus.Platform.VoipAudioSourceHiLevel
+2db25c4782f7d17f2d71bf5375fd6179 Assembly-CSharp.dll:.TestScript
+e1b7ff29fb676ce423215b6b2e4a59e7 Assembly-CSharp.dll:.ONSPReflectionZone
+2709586df0a413c1b7b6fd20761e3123 Assembly-CSharp.dll:.OVRLipSyncContextCanned
+eb3da15c32b68d9f52c60dbb287d76b1 Assembly-CSharp.dll:.ONSPAudioSource
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarHand
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OvrAvatarBody
+4686ab62ccf154cee7a712062250e00f Assembly-CSharp.dll:.SoundEmitter
+93fa8a90f53f48ab17556872b0ecdebc Assembly-CSharp.dll:.OVRLipSyncContext
+069dbb2201dc5bbfc5610a4e530f0cd0 Assembly-CSharp.dll:.OvrAvatarProjectorRenderComponent
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OVRVoiceMod
+42c703b2d783119c11f6fa42056f3006 Assembly-CSharp.dll:ControllerSelection.PhysicsInteraction
+317eb48e978fb89dd2994d237fe1d866 Assembly-CSharp.dll:ControllerSelection.OVRPointerVisualizer
+5e0eb7a2498fb14e510cf05432e4a3a0 Assembly-CSharp.dll:.RawInteraction
+715f01ae3c5d3b4ea57f78f0bfa3d52d Assembly-CSharp.dll:ControllerSelection.OVRRawRaycaster
+755b51582d06796b3a87c9b0119c1581 Assembly-CSharp.dll:.UIInteraction
+532d94421ca6f6834dd7d63586e99d46 Assembly-CSharp.dll:ControllerSelection.OVRPhysicsRaycaster
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainMenuInteraction
+a2313de45ed47f1a12bb2d80e8b2de54 Assembly-CSharp.dll:ControllerSelection.OVRRaycaster
+b35b5a53f15e99ffb521206617574af2 Assembly-CSharp.dll:ControllerSelection.OVRInputModule
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BackButtonLogic
+4eb7bd6772d7211b95c6fb22deb51858 Assembly-CSharp.dll:.GameController
