@@ -69,7 +69,19 @@ public class OVRManager : MonoBehaviour
 	/// <summary>
 	/// Gets a reference to the active sensor.
 	/// </summary>
-	public static OVRTracker tracker { get; private set; }
+//	public static OVRTracker tracker { get; private set;}
+	private static OVRTracker _tracker;
+	public static OVRTracker tracker { 
+		get{
+			if(_tracker == null){
+				_tracker = new OVRTracker();
+			}
+			return _tracker;
+		}
+		private set{
+			_tracker = value;
+		}
+	}
 
 	/// <summary>
 	/// Gets a reference to the active boundary system.

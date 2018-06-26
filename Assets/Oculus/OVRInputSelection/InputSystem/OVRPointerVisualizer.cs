@@ -63,14 +63,27 @@ namespace ControllerSelection {
         }
 
         public void SetPointer(Ray ray) {
-            if (linePointer != null) {
-                linePointer.SetPosition(0, ray.origin);
-                linePointer.SetPosition(1, ray.origin + ray.direction * rayDrawDistance);
-            }
+//            if (linePointer != null) {
+//                linePointer.SetPosition(0, ray.origin);
+//                linePointer.SetPosition(1, ray.origin + ray.direction * rayDrawDistance);
+//            }
+//
+//            if (gazePointer != null) {
+//                gazePointer.position = ray.origin + ray.direction * gazeDrawDistance;
+//            }
+			float distance = rayDrawDistance;
+			if (linePointer != null) {
+				RaycastHit hit;
+				if (Physics.Raycast(ray, out hit, rayDrawDistance)){
+					distance = hit.distance;
+				}
+				linePointer.SetPosition(0, ray.origin);
+				linePointer.SetPosition(1, ray.origin + ray.direction * distance);
+			}
 
-            if (gazePointer != null) {
-                gazePointer.position = ray.origin + ray.direction * gazeDrawDistance;
-            }
+			if (gazePointer != null) {
+				gazePointer.position = ray.origin + ray.direction * distance;
+			}
         }
 
         public void SetPointerVisibility() {

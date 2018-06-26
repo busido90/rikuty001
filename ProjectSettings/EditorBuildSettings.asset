@@ -20,12 +20,3 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/scene_track_1.unity
     guid: 9a6b55d5b9cf6431e8b2b358fa2666f8
-  - enabled: 0
-    path: Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Gameplay/Gameplay.unity
-    guid: 23ed9e68078765d49a6b224a4b9a9c1f
-  - enabled: 0
-    path: Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Levels/Levels.unity
-    guid: b93c75511c63bcc4e8b7c8ca0e521eb0
-  - enabled: 0
-    path: Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenu.unity
-    guid: a4fe7a23572fd784f950aa99d49631f2

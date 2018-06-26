@@ -100,3 +100,5 @@
 /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/bin/Debug/Unity.Cecil.Mdb.dll
 /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/bin/Debug/Unity.IvyParser.dll
 /Users/tnagayama/workspace/rikuty/rikuty_001/Temp/bin/Debug/Unity.IvyParser.dll.mdb
+/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/tnagayama/workspace/rikuty/rikuty_001/Temp/bin/Debug/nunit.framework.dll
