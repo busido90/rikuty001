@@ -44,7 +44,6 @@ public class CountDownComponent : UtilComponent {
 		if (!this.isInitialized) {
 			return;
 		}
-		Debug.Log("StartTxt"+this.timeStartTxt.ToString()+"leftTime"+this.leftTime.ToString());
 		this.elapsedTime += Time.deltaTime;
 		if(!this.isPast){
 			this.Calculate ();
@@ -56,11 +55,11 @@ public class CountDownComponent : UtilComponent {
 	}
 
 	public void Initialize(float second, System.Action callbackFinish, bool isPlayStart){
+        this.count = second;
 		this.callbackFinish = callbackFinish;
 		this.isInitialized = true;
 		this.isPlayStart = isPlayStart;
 		this.callbackFinish = callbackFinish;
-		this.count = second;
 
 		this.SetCountDownText ();
 	}

@@ -33,6 +33,10 @@ public class GameController : UtilComponent {
 	[SerializeField] GameObject objPrepare;
 	[SerializeField] GameObject objCount;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
+
 	// Use this for initialization
 	void Start () {
 		SetActive(this.objOpen, true);
@@ -42,7 +46,6 @@ public class GameController : UtilComponent {
         SetActive(this.objMeterCanvas, true);
         SetActive(this.objAvatarCanvas, false);
 		this.currentStatus = STATUS_ENUM.OPEN;
-
         foreach(GazeButtonInput btn in btnsFinish){
             btn.m_OnClickGaze.AddListener(this.ClickedFinish);
         }
@@ -107,6 +110,7 @@ public class GameController : UtilComponent {
 			this.currentStatus = STATUS_ENUM.PLAY;
             this.force.isPlay = true;
             this.context.isStart = true;
+            this.audioSource.PlayOneShot(this.audioClip);
 		},
 		true);
 
