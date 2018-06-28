@@ -10,6 +10,7 @@ namespace Gamestrap
         MainMenu,
         Levels,
         Gameplay,
+        scene_title,
 		scene_track_1,
 		scene_track_3
     }

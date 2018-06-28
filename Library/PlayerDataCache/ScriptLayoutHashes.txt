@@ -43,7 +43,7 @@ ec8b9a52568deb75d44b9130da88c1bc Assembly-CSharp-firstpass.dll:WhiteCat.Tween.Tw
 4cde3898e72c4ca38e677aeefc5e4354 Assembly-CSharp-firstpass.dll:WhiteCat.FSM.StackState
 5979728add95abdc642051d92f726e95 Assembly-CSharp.dll:.OVRDebugHeadController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BackButtonLogic
-9a0df9069128949f62522aad9e664519 Assembly-CSharp.dll:.Force
+7dde1daf2f92889862d67ac832355eb2 Assembly-CSharp.dll:.Force
 23b50ef73e2c1a8a76860d35bcbbf8fc Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.GlobalFog
 daabd8d8800a87cff11f866c4d06a232 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ContrastStretch
 7efed57be892091afeed1c6de659f0ef Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenFogColor
@@ -300,7 +300,7 @@ c742b6dfdf7b97a4565ba900d4550c3d Assembly-CSharp.dll:.OVRDebugConsole
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-e789e66aafa840ef9aabc1becf608135 Assembly-CSharp.dll:.GameController
+5bb409c9bbe5374750aacc92ecc9ed8c Assembly-CSharp.dll:.GameController
 c95c3e3ee1edd773aeb2d0cefa48b191 Assembly-CSharp-firstpass.dll:WhiteCat.Paths.MoveAlongPath
 ec8b9a52568deb75d44b9130da88c1bc Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenCanvasGroupAlpha
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.TransitionHelper
@@ -391,3 +391,4 @@ efaacbc067f54d801b8ecfdac3af7084 Assembly-CSharp.dll:.OVRVoiceModContext
 7b8e7866f51a0817662577a68d076786 Assembly-CSharp-firstpass.dll:.DD_CoordinateAxis
 97b3e1b4352e2713eafc60af33250232 Assembly-CSharp-firstpass.dll:Gamestrap.MainMenuControl
 4d41d6a90d8754adcebf37bf8efcbd8e Assembly-CSharp-firstpass.dll:Gamestrap.GradientEffect
+4a2d1d2de33fa0b9fa84edbc61e868df Assembly-CSharp.dll:.Context

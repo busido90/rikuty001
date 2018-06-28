@@ -211,26 +211,33 @@ public class UtilComponent : MonoBehaviour {
 	}
 
 #else
+    public static void SetLabel(Text txt, string val)
+    {
+        if (txt == null) return;
+        txt.text = val;
+    }
+
+    public static void SetLabel(Text txt, int val, bool isSeparete = false)
+    {
+        if (txt == null) return;
+        if (isSeparete)
+        {
+            //          AppDebug.Log(" ", AppDebug.LogType.Todo);
+            //          lbl.text = CommonUtil.GetThansandSeparatedStr( val );
+        }
+        else
+        {
+            txt.text = val.ToString();
+        }
+    }
+
 	public static void SetLabel( Text[] txt, string val ) {
 		for(int i=0; i<txt.Length; i++){
 			SetLabel(txt[i], val);
 		}
 	}
 
-	public static void SetLabel( Text txt, string val ) {
-		if( txt == null ) return;
-		txt.text = val;
-	}
 
-	public static void SetLabel( Text txt, int val, bool isSeparete = false) {
-		if( txt == null ) return;
-		if( isSeparete ) {
-//			AppDebug.Log(" ", AppDebug.LogType.Todo);
-//			lbl.text = CommonUtil.GetThansandSeparatedStr( val );
-		}else{
-			txt.text = val.ToString();
-		}
-	}
 
 	public static void SetLabelColor( Text txt, Color color){
 		if(txt == null)	return;

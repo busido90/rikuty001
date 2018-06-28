@@ -94,7 +94,7 @@ public class Force : MonoBehaviour
 
 	public Rigidbody rigidBody;
 
-	public bool isStart = false;
+	public bool isPlay = false;
 
 
 	void Start()
@@ -156,7 +156,7 @@ public class Force : MonoBehaviour
 
 	void Update()
 	{
-		if(!this.isStart) return;
+		if(!this.isPlay) return;
 
 		OVRInput.Controller activeController = OVRInput.GetActiveController();
 
@@ -188,6 +188,7 @@ public class Force : MonoBehaviour
 
 		this.MakeAverage(rot);
 
+
 		if(this.CheckCycle(rot) && this.waitCount > 0.5f){
 			this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z + 3f);
 			this.waitCount = 0f;
@@ -205,6 +206,8 @@ public class Force : MonoBehaviour
 		if(this.rigidBody.velocity.z > 30f){
 			this.rigidBody.velocity = Vector3.forward * 30f;
 		}
+
+
 
 
 		for (int i = 0; i < monitors.Count; i++)
@@ -230,7 +233,7 @@ public class Force : MonoBehaviour
 	private Quaternion average = new Quaternion();
 	private int averageCount = 100;
 	private int currentCount = 0;
-	public Text uiText;
+	//public Text uiText;
 
 
 	private void MakeAverage(Quaternion rot){
@@ -252,11 +255,8 @@ public class Force : MonoBehaviour
 		}
 
 		this.average = new Quaternion(sumX / this.lists.Length, sumY / this.lists.Length, sumZ / this.lists.Length, sumW / this.lists.Length);
-//		Debug.Log("rot----------");
-//		Debug.Log(rot);
-//		Debug.Log("average------");
-//		Debug.Log(this.average);
-		this.uiText.text += "\n"+this.average.x.ToString()+","+this.average.y.ToString()+","+this.average.z.ToString()+","+this.average.w.ToString();
+
+		//this.uiText.text += "\n"+this.average.x.ToString()+","+this.average.y.ToString()+","+this.average.z.ToString()+","+this.average.w.ToString();
 
 	}
 

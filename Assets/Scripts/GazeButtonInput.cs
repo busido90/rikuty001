@@ -25,7 +25,7 @@ public class GazeButtonInput : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
 	// Event delegates triggered on click.
 	[SerializeField]
-	private UnityEvent m_OnClickGaze = new UnityEvent();
+    public UnityEvent m_OnClickGaze = new UnityEvent();
 
 	private bool isPointerInside;
 

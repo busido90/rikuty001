@@ -918,7 +918,6 @@ public class OVRManager : MonoBehaviour
 		// Detect whether this platform is a supported platform
 		RuntimePlatform currPlatform = Application.platform;
 		isSupportedPlatform |= currPlatform == RuntimePlatform.Android;
-		//isSupportedPlatform |= currPlatform == RuntimePlatform.LinuxPlayer;
 		isSupportedPlatform |= currPlatform == RuntimePlatform.OSXEditor;
 		isSupportedPlatform |= currPlatform == RuntimePlatform.OSXPlayer;
 		isSupportedPlatform |= currPlatform == RuntimePlatform.WindowsEditor;

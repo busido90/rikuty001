@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameController : UtilComponent {
 
@@ -9,6 +11,11 @@ public class GameController : UtilComponent {
 	public CountDownComponent cdCarib;
 	public CountDownComponent cdCountDown;
 
+    [SerializeField] private Context context;
+    [SerializeField] private GameObject objMeterCanvas;
+    [SerializeField] private GameObject objAvatarCanvas;
+
+    [SerializeField] private GazeButtonInput[] btnsFinish;
 
 	public enum STATUS_ENUM : int{
 		NON,
@@ -16,7 +23,8 @@ public class GameController : UtilComponent {
 		CARIB,
 		PREPARE,
 		COUNT,
-		PLAY
+		PLAY,
+        FINISH
 	}
 	private STATUS_ENUM currentStatus = STATUS_ENUM.NON;
 
@@ -31,8 +39,13 @@ public class GameController : UtilComponent {
 		SetActive(this.objCarib, false);
 		SetActive(this.objPrepare, false);
 		SetActive(this.objCount, false);
-		this.currentStatus = STATUS_ENUM.OPEN;	
-//		this.ClickSetButton();
+        SetActive(this.objMeterCanvas, true);
+        SetActive(this.objAvatarCanvas, false);
+		this.currentStatus = STATUS_ENUM.OPEN;
+
+        foreach(GazeButtonInput btn in btnsFinish){
+            btn.m_OnClickGaze.AddListener(this.ClickedFinish);
+        }
 	}
 	
 	// Update is called once per frame
@@ -53,7 +66,9 @@ public class GameController : UtilComponent {
 		case STATUS_ENUM.PLAY:
 			this.UpdatePlay();
 			break;
-
+        case STATUS_ENUM.FINISH:
+            this.UpdateFinish();
+            break;
 		}
 	}
 		
@@ -65,9 +80,8 @@ public class GameController : UtilComponent {
 		this.currentStatus = STATUS_ENUM.CARIB;
 		SetActive(this.objOpen, false);
 		SetActive(this.objCarib, true);
-		this.cdCarib.Initialize(10f, 
+		this.cdCarib.Initialize(0f, 
 			()=>{
-				Debug.Log("aaaaa");
 				this.currentStatus = STATUS_ENUM.PREPARE;
 				SetActive(this.objCarib, false);
 				SetActive(this.objPrepare, true);
@@ -91,14 +105,33 @@ public class GameController : UtilComponent {
 	private void UpdateCount(){
 		this.cdCountDown.Initialize(3f, ()=>{
 			this.currentStatus = STATUS_ENUM.PLAY;
+            this.force.isPlay = true;
+            this.context.isStart = true;
 		},
 		true);
 
 	}
 
 	private void UpdatePlay(){
-		this.force.isStart = true;
+        if(this.context.isFinish){
+            this.currentStatus = STATUS_ENUM.FINISH;
+            SetActive(this.objMeterCanvas, false);
+            SetActive(this.objAvatarCanvas, true);
+            this.force.isPlay = false;
+        }
 	}
+
+    private void UpdateFinish()
+    {
+
+    }
+
+
+    private void ClickedFinish()
+    {
+        Gamestrap.GSAppExampleControl.Instance.LoadScene(Gamestrap.ESceneNames.scene_title);
+
+    }
 
 
 }
