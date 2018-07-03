@@ -192,6 +192,10 @@ public class OVRGazePointer : MonoBehaviour {
         {
             Show();
         }
+        foreach (Transform child in transform)
+        {
+            Debug.Log(child.gameObject.activeSelf);
+        }
     }
 
     /// <summary>
@@ -284,7 +288,7 @@ public class OVRGazePointer : MonoBehaviour {
     {
         foreach (Transform child in transform)
         {
-            child.gameObject.SetActive(false);
+                child.gameObject.SetActive(false);
         }
         if (GetComponent<Renderer>())
             GetComponent<Renderer>().enabled = false;
@@ -293,13 +297,17 @@ public class OVRGazePointer : MonoBehaviour {
 
     void Show()
     {
-        foreach (Transform child in transform)
+        Debug.Log("Show1");
+       foreach (Transform child in transform)
         {
             child.gameObject.SetActive(true);
         }
         if (GetComponent<Renderer>())
             GetComponent<Renderer>().enabled = true;
         hidden = false;
+
+        Debug.Log("Show2");
+
     }
 
 }

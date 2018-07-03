@@ -1,8 +1,9 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupConfiguration="{B90298B6-30B5-6111-1333-0C09107CF771}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/VR/Scripts/Util/OVRGazePointer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/VR/Scripts/OVROverlay.cs">
     <Files>
-      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRGazePointer.cs" Line="292" Column="6" />
+      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRGazePointer.cs" Line="309" Column="25" />
+      <File FileName="Assets/Oculus/VR/Scripts/OVROverlay.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -17,7 +18,6 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-firstpass PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multi-Startup" Name="Multi-Startup">
       <Items>
