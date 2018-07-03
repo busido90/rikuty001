@@ -335,6 +335,7 @@
      <Compile Include="Assets\Scripts\GazeButtonInput.cs" />
      <Compile Include="Assets\Scripts\LogSave.cs" />
      <Compile Include="Assets\Scripts\MovePointView.cs" />
+     <Compile Include="Assets\Scripts\MovieTest.cs" />
      <Compile Include="Assets\Scripts\OVRController.cs" />
      <Compile Include="Assets\Scripts\SerialPortManager.cs" />
      <Compile Include="Assets\Scripts\TerrainManager.cs" />

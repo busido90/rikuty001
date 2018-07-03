@@ -7,6 +7,7 @@ mock/MiniGames/ProjectSettings/ProjectVersion.txt
 ~$*.xlsx
 ~$*.xlsx.meta
 Assets/Oculus/OVRInputSelection/Meshes/TouchControllers/Models/controller_NM.psd* 
+*.apk
 
 
 # ----[ Visual Studio / MonoDevelop generated ]------- #
