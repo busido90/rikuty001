@@ -29,7 +29,7 @@ using UnityEngine.UI;
 /// UI pointer driven by gaze input.
 /// </summary>
 public class OVRGazePointer : MonoBehaviour {
-    private Transform trailFollower; //the transform that rotates according to our movement
+    private Transform gazeIcon; //the transform that rotates according to our movement
 
     [Tooltip("Should the pointer be hidden when not over interactive objects.")]
     public bool hideByDefault = true;
@@ -71,10 +71,6 @@ public class OVRGazePointer : MonoBehaviour {
     /// </summary>
     private int positionSetsThisFrame = 0;
     /// <summary>
-    /// Position last frame.
-    /// </summary>
-    private Vector3 lastPosition;
-    /// <summary>
     /// Last time code requested the pointer be shown. Usually when pointer passes over interactive elements.
     /// </summary>
     private float lastShowRequestTime;
@@ -85,11 +81,6 @@ public class OVRGazePointer : MonoBehaviour {
 
     [Tooltip("Radius of the cursor. Used for preventing geometry intersections.")]
     public float cursorRadius = 1f;
-
-    
-
-    // How much the gaze pointer moved in the last frame
-    public Vector3 positionDelta { private set; get; }
 
     // Optionally present GUI element displaying progress when using gaze-to-select mechanics
     private OVRProgressIndicator progressIndicator;
@@ -171,7 +162,7 @@ public class OVRGazePointer : MonoBehaviour {
 
         _instance = this;
 
-        trailFollower = transform.Find("TrailFollower");
+		gazeIcon = transform.Find("GazeIcon");
         progressIndicator = transform.GetComponent<OVRProgressIndicator>();
     }
     
@@ -192,10 +183,6 @@ public class OVRGazePointer : MonoBehaviour {
         {
             Show();
         }
-        foreach (Transform child in transform)
-        {
-            Debug.Log(child.gameObject.activeSelf);
-        }
     }
 
     /// <summary>
@@ -207,8 +194,7 @@ public class OVRGazePointer : MonoBehaviour {
     {
         transform.position = pos;
         
-        // Set the rotation to match the normal of the surface it's on. For the other degree of freedom (rotation around its own normal) use
-        // the direction of movement so that trail effects etc are easier
+        // Set the rotation to match the normal of the surface it's on.
         Quaternion newRot = transform.rotation;
         newRot.SetLookRotation(normal, rayTransform.up);
         transform.rotation = newRot;
@@ -248,17 +234,11 @@ public class OVRGazePointer : MonoBehaviour {
             transform.rotation = newRot;
         }
 
-        // rotate the trail-follower to movement direction so we get a nicer particle effect
-        Quaternion trailRotation = trailFollower.rotation;
-        //we're setting the global rotation of the child (positions are in global coordinates), so premultiply the look vector with the parent transform
-        trailRotation.SetLookRotation(transform.rotation * new Vector3(0, 0, 1), (lastPosition - transform.position).normalized);
-        trailFollower.rotation = trailRotation;
+        Quaternion iconRotation = gazeIcon.rotation;
+		iconRotation.SetLookRotation(transform.rotation * new Vector3(0, 0, 1));
+		gazeIcon.rotation = iconRotation;
 
-        // Keep track of cursor movement direction
-        positionDelta = transform.position - lastPosition;
-        lastPosition = transform.position;
-        
-        positionSetsThisFrame = 0;
+		positionSetsThisFrame = 0;
     }
 
     /// <summary>
@@ -288,7 +268,7 @@ public class OVRGazePointer : MonoBehaviour {
     {
         foreach (Transform child in transform)
         {
-                child.gameObject.SetActive(false);
+            child.gameObject.SetActive(false);
         }
         if (GetComponent<Renderer>())
             GetComponent<Renderer>().enabled = false;
@@ -297,17 +277,13 @@ public class OVRGazePointer : MonoBehaviour {
 
     void Show()
     {
-        Debug.Log("Show1");
-       foreach (Transform child in transform)
+        foreach (Transform child in transform)
         {
             child.gameObject.SetActive(true);
         }
         if (GetComponent<Renderer>())
             GetComponent<Renderer>().enabled = true;
         hidden = false;
-
-        Debug.Log("Show2");
-
     }
 
 }
