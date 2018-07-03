@@ -712,9 +712,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 78afb794-2964-4091-8b27-4001d263cf22
-  projectName: rikuty_001
-  organizationId: geechs-tnagayama
+  cloudProjectId: c630dbe1-2f12-4d2f-9dc3-9d12fed13cc0
+  projectName: rikuty001
+  organizationId: unity_obti07mesap4dq
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

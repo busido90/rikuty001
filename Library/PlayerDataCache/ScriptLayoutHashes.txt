@@ -1,9 +1,8 @@
 Android
 PlayerPath?
-/Users/tnagayama/workspace/rikuty/rikuty_001/rikuty_001.apk
+/Users/tnagayama/workspace/rikuty/rikuty_001/rikuty_test.apk
 SceneListBegin?
-Assets/Scenes/scene_title.unity
-Assets/Scenes/scene_track_3.unity
+Assets/Oculus/VR/Scenes/UI.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ONSPVersion
 efc6b5e3c5cc8c20654d54969de7a1f2 Assembly-CSharp-firstpass.dll:.DragAlongPath
@@ -91,7 +90,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 63819ec385f3bbd3917551066aa9525f Assembly-CSharp.dll:.OVRRaycaster
 bb22201689535927e509cd7031f9233e Assembly-CSharp-firstpass.dll:WhiteCat.FSM.StackStateMachine
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:WhiteCat.ScriptableComponentWithEditor
-0662806046372c2af466fdfbddb4929c Assembly-CSharp.dll:.MovieTest
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MovieTest
 3acaee29beb68debe559c5d436317fda Assembly-CSharp-firstpass.dll:WhiteCat.Tween.TweenSizeDelta
 a02ba2cc0dc7b4ebdb9f798a5b2a0f0a Assembly-CSharp.dll:.SerialPortManager
 ec8b9a52568deb75d44b9130da88c1bc Assembly-CSharp-firstpass.dll:.CustomTweenSize
