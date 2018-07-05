@@ -13,6 +13,7 @@ namespace Gamestrap
         scene_title,
 		scene_track_1,
 		scene_field,
-        scene_sea
+        scene_sea,
+        scene_night
     }
 }

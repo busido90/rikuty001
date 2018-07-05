@@ -31,6 +31,7 @@ namespace Gamestrap
 
         public RawImage imgField;
         public RawImage imgSea;
+        public RawImage imgNight;
 
         private ESceneNames name = ESceneNames.scene_field;
 
@@ -44,6 +45,7 @@ namespace Gamestrap
             this.name = ESceneNames.scene_sea;
             this.imgSea.color = new Color(this.imgSea.color.r, this.imgSea.color.g, this.imgSea.color.b, 255f);
             this.imgField.color = new Color(this.imgField.color.r, this.imgField.color.g, this.imgField.color.b, 0f);
+            this.imgNight.color = new Color(this.imgNight.color.r, this.imgNight.color.g, this.imgNight.color.b, 0f);
         }
 
         public void PlaySceneField()
@@ -51,6 +53,15 @@ namespace Gamestrap
             this.name = ESceneNames.scene_field;
             this.imgSea.color = new Color(this.imgSea.color.r, this.imgSea.color.g, this.imgSea.color.b, 0f);
             this.imgField.color = new Color(this.imgField.color.r, this.imgField.color.g, this.imgField.color.b, 255f);
+            this.imgNight.color = new Color(this.imgNight.color.r, this.imgNight.color.g, this.imgNight.color.b, 0f);
+        }
+
+        public void PlaySceneNight()
+        {
+            this.name = ESceneNames.scene_night;
+            this.imgSea.color = new Color(this.imgSea.color.r, this.imgSea.color.g, this.imgSea.color.b, 0f);
+            this.imgField.color = new Color(this.imgField.color.r, this.imgField.color.g, this.imgField.color.b, 0f);
+            this.imgNight.color = new Color(this.imgNight.color.r, this.imgNight.color.g, this.imgNight.color.b, 255f);
         }
 
         public void AchievementsClick()
