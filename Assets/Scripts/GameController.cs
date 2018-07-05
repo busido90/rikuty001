@@ -45,7 +45,11 @@ public class GameController : UtilComponent {
 		SetActive(this.objCount, false);
         SetActive(this.objMeterCanvas, true);
         SetActive(this.objAvatarCanvas, false);
-		this.currentStatus = STATUS_ENUM.OPEN;
+
+        this.currentStatus = STATUS_ENUM.PREPARE;
+        SetActive(this.objCarib, false);
+        SetActive(this.objPrepare, true);
+
         foreach(GazeButtonInput btn in btnsFinish){
             btn.m_OnClickGaze.AddListener(this.ClickedFinish);
         }
