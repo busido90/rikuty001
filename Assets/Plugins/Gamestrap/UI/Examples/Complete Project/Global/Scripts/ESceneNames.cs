@@ -12,6 +12,7 @@ namespace Gamestrap
         Gameplay,
         scene_title,
 		scene_track_1,
-		scene_track_3
+		scene_track_3,
+        scene_track_4
     }
 }

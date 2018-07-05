@@ -6,7 +6,7 @@ public class TerrainManager : MonoBehaviour {
 
 	public Transform transAvatar;
 
-	private float CONST = 500f;
+	public float CONST = 500f;
 
 	private int currentCount = 1;
 
