@@ -34,14 +34,16 @@ public class GameController : UtilComponent {
 	[SerializeField] GameObject objCount;
 
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private AudioClip[] audioClips;
+
+    private int currentMusic = 0;
 
 
 	// Use this for initialization
 	void Start () {
-		SetActive(this.objOpen, true);
+		SetActive(this.objOpen, false);
 		SetActive(this.objCarib, false);
-		SetActive(this.objPrepare, false);
+        SetActive(this.objPrepare, true);
 		SetActive(this.objCount, false);
         SetActive(this.objMeterCanvas, true);
         SetActive(this.objAvatarCanvas, false);
@@ -114,7 +116,7 @@ public class GameController : UtilComponent {
 			this.currentStatus = STATUS_ENUM.PLAY;
             this.force.isPlay = true;
             this.context.isStart = true;
-            this.audioSource.PlayOneShot(this.audioClip);
+            this.audioSource.PlayOneShot(this.audioClips[this.currentMusic]);
 		},
 		true);
 
@@ -126,6 +128,10 @@ public class GameController : UtilComponent {
             SetActive(this.objMeterCanvas, false);
             SetActive(this.objAvatarCanvas, true);
             this.force.isPlay = false;
+        }
+        if(this.audioSource.time == 0.0f && !this.audioSource.isPlaying){
+            this.currentMusic++;
+            this.audioSource.PlayOneShot(this.audioClips[this.currentMusic % this.audioClips.Length]);
         }
 	}
 

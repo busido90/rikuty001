@@ -7929,7 +7929,8 @@ MonoBehaviour:
   objPrepare: {fileID: 1270391148}
   objCount: {fileID: 364060366}
   audioSource: {fileID: 651348415}
-  audioClip: {fileID: 8300000, guid: 5060171412cb247e3acbc7e933f39bb2, type: 3}
+  audioClips:
+  - {fileID: 8300000, guid: 3afab829c4b2f444da0eb4c69ea9244b, type: 3}
 --- !u!114 &304670492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9742,7 +9743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &364060367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16461,7 +16462,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5060171412cb247e3acbc7e933f39bb2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3afab829c4b2f444da0eb4c69ea9244b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -39065,7 +39066,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270391148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -96.9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 759836935}
@@ -57384,6 +57385,10 @@ Prefab:
     - target: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
       propertyPath: m_FontData.m_MaxSize
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
@@ -79705,7 +79710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2024940851
 RectTransform:
   m_ObjectHideFlags: 0
@@ -79714,7 +79719,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2024940850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.555}
+  m_LocalPosition: {x: 0, y: 0, z: 1.77}
   m_LocalScale: {x: 0.0019999999, y: 0.0019999999, z: 0.01}
   m_Children:
   - {fileID: 48881278}
@@ -83307,7 +83312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2145085442
 RectTransform:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Context : UtilComponent {
     [NonSerialized] public bool isStart = false;
     [NonSerialized] public bool isFinish = false;
 
-    [NonSerialized] public float time = 60f;
+    [NonSerialized] public float time = 300f;
     [NonSerialized] public float speed = 0f;
     [NonSerialized] public float distance = 0f;
     [NonSerialized] public float calorie = 0f;

@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &38083542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1736026683}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1339,6 +1339,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &119260423 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 119260419}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &144684850
 Prefab:
   m_ObjectHideFlags: 0
@@ -2017,6 +2023,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &253349299 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 253349295}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &254598249
 Prefab:
   m_ObjectHideFlags: 0
@@ -2331,6 +2343,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &273083072 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 273083068}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &281953247
 Prefab:
   m_ObjectHideFlags: 0
@@ -3367,7 +3385,9 @@ MonoBehaviour:
   objPrepare: {fileID: 736848735}
   objCount: {fileID: 580066913}
   audioSource: {fileID: 1099764518}
-  audioClip: {fileID: 8300000, guid: 5060171412cb247e3acbc7e933f39bb2, type: 3}
+  audioClips:
+  - {fileID: 8300000, guid: d7fc625e7e0454218a413cbfde37d420, type: 3}
+  - {fileID: 8300000, guid: 448ff5f81f09447c4803053467d2d2ad, type: 3}
 --- !u!114 &516390588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3382,19 +3402,19 @@ MonoBehaviour:
   force: {fileID: 255349154}
   player: {fileID: 255349152}
   txtCurrentTime:
-  - {fileID: 0}
+  - {fileID: 119260423}
   txtCurrentSpeed:
-  - {fileID: 0}
+  - {fileID: 1433910131}
   txtDistance:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1050537973}
+  - {fileID: 1455995201}
   txtCalorie:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 253349299}
+  - {fileID: 649021925}
   txtSumTime:
-  - {fileID: 0}
+  - {fileID: 273083072}
   txtAveSpeed:
-  - {fileID: 0}
+  - {fileID: 979946778}
 --- !u!4 &516390589
 Transform:
   m_ObjectHideFlags: 0
@@ -4132,7 +4152,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
+  far clip plane: 20000000
   field of view: 90
   orthographic: 0
   orthographic size: 5
@@ -4520,6 +4540,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &649021925 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 649021921}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!4 &655795929 stripped
 Transform:
   m_PrefabParentObject: {fileID: 414594, guid: e895839d2d09f2549b9c3d67f7f376a9, type: 2}
@@ -5220,7 +5246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &736848736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5228,7 +5254,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 736848735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -27}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Children:
   - {fileID: 540610879}
@@ -5728,6 +5754,10 @@ Prefab:
     - target: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
       propertyPath: m_FontData.m_MaxSize
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56f2bd423018d0c4cacb31522b8865ee, type: 2}
@@ -10898,6 +10928,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &979946778 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 979946774}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1006873130
 GameObject:
   m_ObjectHideFlags: 0
@@ -11307,6 +11343,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1050537973 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1050537969}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1054976046
 Prefab:
   m_ObjectHideFlags: 0
@@ -11731,7 +11773,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5060171412cb247e3acbc7e933f39bb2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d7fc625e7e0454218a413cbfde37d420, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11901,7 +11943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1122939185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11910,7 +11952,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1122939184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.555}
+  m_LocalPosition: {x: 0, y: 0, z: 1.8}
   m_LocalScale: {x: 0.0019999999, y: 0.0019999999, z: 0.01}
   m_Children:
   - {fileID: 675708567}
@@ -12024,7 +12066,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1736026683}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -18436,6 +18478,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1433910131 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433910127}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!4 &1450630682 stripped
 Transform:
   m_PrefabParentObject: {fileID: 493874, guid: 1731ae0548ad2ba458c572ab6df7b58c, type: 2}
@@ -18601,6 +18649,12 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1455995201 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11404420, guid: 56f2bd423018d0c4cacb31522b8865ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1455995197}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1472178928
 Prefab:
   m_ObjectHideFlags: 0
@@ -19029,7 +19083,7 @@ MonoBehaviour:
   m_OnClickGaze:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 516390587}
         m_MethodName: ClickStartButton
         m_Mode: 1
         m_Arguments:
@@ -22499,7 +22553,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045130407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 28}
+  m_LocalPosition: {x: 0, y: 0, z: 44.1}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1126738854}
