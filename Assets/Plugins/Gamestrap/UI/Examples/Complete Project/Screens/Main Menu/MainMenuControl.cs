@@ -23,12 +23,34 @@ namespace Gamestrap
             musicToggle.onValueChanged.AddListener(ToggleMusic);
 
             notificationAnimator = notificationText.GetComponent<Animator>();
+
+            this.PlaySceneField();
         }
 
         #region Event Methods Called from the UI
+
+        public RawImage imgField;
+        public RawImage imgSea;
+
+        private ESceneNames name = ESceneNames.scene_field;
+
         public void PlayClick()
         {
-			GSAppExampleControl.Instance.LoadScene(ESceneNames.scene_track_4);
+            GSAppExampleControl.Instance.LoadScene(this.name);
+        }
+
+        public void PlaySceneSea()
+        {
+            this.name = ESceneNames.scene_sea;
+            this.imgSea.color = new Color(this.imgSea.color.r, this.imgSea.color.g, this.imgSea.color.b, 255f);
+            this.imgField.color = new Color(this.imgField.color.r, this.imgField.color.g, this.imgField.color.b, 0f);
+        }
+
+        public void PlaySceneField()
+        {
+            this.name = ESceneNames.scene_field;
+            this.imgSea.color = new Color(this.imgSea.color.r, this.imgSea.color.g, this.imgSea.color.b, 0f);
+            this.imgField.color = new Color(this.imgField.color.r, this.imgField.color.g, this.imgField.color.b, 255f);
         }
 
         public void AchievementsClick()

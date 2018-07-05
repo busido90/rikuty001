@@ -1,16 +1,8 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupConfiguration="{B90298B6-30B5-6111-1333-0C09107CF771}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/VR/Scripts/Util/OVRRaycaster.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs">
     <Files>
-      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRGazePointer.cs" Line="165" Column="11" />
-      <File FileName="Assets/Oculus/VR/Scripts/OVROverlay.cs" Line="1" Column="1" />
-      <File FileName="Assets/Oculus/VR/Scripts/OVRPlugin.cs" Line="2987" Column="4" />
-      <File FileName="Assets/Scripts/TerrainManager.cs" Line="9" Column="26" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="136" Column="76" />
-      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Global/Scripts/GSAppExampleControl.cs" Line="33" Column="28" />
-      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Global/Scripts/ESceneNames.cs" Line="16" Column="18" />
-      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs" Line="31" Column="68" />
-      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRRaycaster.cs" Line="96" Column="1" />
+      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs" Line="34" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
