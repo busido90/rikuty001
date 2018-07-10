@@ -1,8 +1,8 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupConfiguration="{B90298B6-30B5-6111-1333-0C09107CF771}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Global/Scripts/ESceneNames.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs">
     <Files>
-      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs" Line="35" Column="39" />
+      <File FileName="Assets/Plugins/Gamestrap/UI/Examples/Complete Project/Screens/Main Menu/MainMenuControl.cs" Line="61" Column="48" />
       <File FileName="Assets/Scripts/GameController.cs" Line="46" Column="40" />
       <File FileName="Assets/Scripts/GazeButtonInput.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Context.cs" Line="12" Column="43" />
