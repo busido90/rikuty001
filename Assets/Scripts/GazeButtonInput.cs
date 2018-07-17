@@ -39,7 +39,6 @@ public class GazeButtonInput : MonoBehaviour, IPointerEnterHandler, IPointerExit
 	// Update is called once per frame
 	protected void Update () {
 		if(this.isPointerInside){
-			Debug.Log("CCCCCCC");
 			this.elapsedTime += Time.deltaTime;
 			if(this.currentStatus == COUNT_STATUS.WAIT && this.elapsedTime > this.WAIT_TIME){
 				this.currentStatus = COUNT_STATUS.COUNT;
@@ -63,14 +62,12 @@ public class GazeButtonInput : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
 	public virtual void OnPointerEnter(PointerEventData eventData)
 	{
-		Debug.Log("AAAAAAAAAA");
 		isPointerInside = true;
 		this.currentStatus = COUNT_STATUS.WAIT;
 	}
 
 	public virtual void OnPointerExit(PointerEventData eventData)
 	{
-		Debug.Log("BBBBBBBBBB");
 		isPointerInside = false;
 	}
 		

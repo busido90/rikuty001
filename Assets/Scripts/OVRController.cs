@@ -174,8 +174,11 @@ public class OVRController : MonoBehaviour
 
 		prevConnected = connectedControllerNames;
 
-		Quaternion rot = OVRInput.GetLocalControllerRotation(activeController);
+        Quaternion rot = OVRInput.GetLocalControllerRotation(activeController);
 		data.AppendFormat("Orientation: ({0:F2}, {1:F2}, {2:F2}, {3:F2})\n", rot.x, rot.y, rot.z, rot.w);
+
+        Vector3 ang = rot.eulerAngles;
+        data.AppendFormat("Angles: ({0:F2}, {1:F2}, {2:F2})\n", ang.x, ang.y, ang.z);
 
 //		Vector3 angVel = OVRInput.GetLocalControllerAngularVelocity(activeController);
 //		data.AppendFormat("AngVel: ({0:F2}, {1:F2}, {2:F2})\n", angVel.x, angVel.y, angVel.z);

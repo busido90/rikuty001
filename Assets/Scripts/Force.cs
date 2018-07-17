@@ -154,58 +154,43 @@ public class Force : MonoBehaviour
 	static string prevConnected = "";
 	static BoolMonitor controllers = new BoolMonitor("Controllers Changed", () => { return OVRInput.GetConnectedControllers().ToString() != prevConnected; });
 
-	void Update()
+	void FixedUpdate()
 	{
 		if(!this.isPlay) return;
 
 		OVRInput.Controller activeController = OVRInput.GetActiveController();
 
-		data.Length = 0;
-		byte recenterCount = OVRInput.GetControllerRecenterCount();
-		data.AppendFormat("RecenterCount: {0}\n", recenterCount);
-
-		byte battery = OVRInput.GetControllerBatteryPercentRemaining();
-		data.AppendFormat("Battery: {0}\n", battery);
-
-		float framerate = OVRPlugin.GetAppFramerate();
-		data.AppendFormat("Framerate: {0:F2}\n", framerate);
-
-		string activeControllerName = activeController.ToString();
-		data.AppendFormat("Active: {0}\n", activeControllerName);
-
-		string connectedControllerNames = OVRInput.GetConnectedControllers().ToString();
-		data.AppendFormat("Connected: {0}\n", connectedControllerNames);
-
-		data.AppendFormat("PrevConnected: {0}\n", prevConnected);
-
-		controllers.Update();
-		controllers.AppendToStringBuilder(ref data);
-
-		prevConnected = connectedControllerNames;
 
 		Quaternion rot = OVRInput.GetLocalControllerRotation(activeController);
-		data.AppendFormat("Orientation: ({0:F2}, {1:F2}, {2:F2}, {3:F2})\n", rot.x, rot.y, rot.z, rot.w);
+        //data.AppendFormat("Orientation: ({0:F2}, {1:F2}, {2:F2}, {3:F2})\n", rot.x, rot.y, rot.z, rot.w);
 
-		this.MakeAverage(rot);
+        //this.MakeAverage(rot);
 
 
-		if(this.CheckCycle(rot) && this.waitCount > 0.5f){
-			this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z + 3f);
-			this.waitCount = 0f;
-		}
+        //if(this.CheckCycle(rot) && this.waitCount > 0.5f){
+        //	this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z + 3f);
+        //	this.waitCount = 0f;
+        //}
 
-		this.waitCount += Time.deltaTime;
+        this.ForceUpdate(rot);
 
-		if(this.waitCount > 0.5f){
-			this.rigidBody.velocity = new Vector3(0f, 0f, this.rigidBody.velocity.z - 0.3f);
-		}
+        //this.waitCount += Time.deltaTime;
+
+        //if(this.waitCount > 0.5f){
+        float speed = this.rigidBody.velocity.z;
+        //空気抵抗
+        float Ra = speed * speed * 0.00005f;
+        //転がり抵抗
+        float Rr = 0.0001f;
+        this.rigidBody.velocity -= new Vector3(0f, 0f, Ra+Rr);
+		//}
 
 		if(this.rigidBody.velocity.z < 0f){
 			this.rigidBody.velocity = Vector3.zero;
 		}
-		if(this.rigidBody.velocity.z > 30f){
-			this.rigidBody.velocity = Vector3.forward * 30f;
-		}
+		//if(this.rigidBody.velocity.z > 30f){
+		//	this.rigidBody.velocity = Vector3.forward * 30f;
+		//}
 
 
 
@@ -269,5 +254,20 @@ public class Force : MonoBehaviour
 //		result |= rot.w < this.average.w - KOTEI || this.average.w + KOTEI < rot.w;
 		return result;
 	}
+
+    bool isFirst = false;
+    private Quaternion preRot = new Quaternion(0f, 0f, 0f, 1f);
+    private void ForceUpdate(Quaternion currentRot){
+        if (!this.isFirst){
+            this.preRot = currentRot;
+            this.isFirst = true;
+        }
+
+        float force = Mathf.Abs(currentRot.x - this.preRot.x) * 18f;
+
+        this.rigidBody.velocity += new Vector3(0f, 0f, force);
+
+        this.preRot = currentRot;
+    }
 }
 
