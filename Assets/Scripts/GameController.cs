@@ -43,7 +43,7 @@ public class GameController : UtilComponent {
 	void Start () {
 		SetActive(this.objOpen, false);
 		SetActive(this.objCarib, false);
-        SetActive(this.objPrepare, true);
+        SetActive(this.objPrepare, false);
 		SetActive(this.objCount, false);
         SetActive(this.objMeterCanvas, true);
         SetActive(this.objAvatarCanvas, false);
